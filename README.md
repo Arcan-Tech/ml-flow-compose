@@ -75,3 +75,7 @@ The MLflow tracking server is composed of 3 docker containers:
     ```
 
 Code original source from : https://github.com/sachua/mlflow-docker-compose 
+
+
+htpasswd -cb /etc/nginx/.htpasswd ${ML_FLOW_AUTH_USERNAME} ${ML_FLOW_AUTH_PASSWORD}
+For genereting password
